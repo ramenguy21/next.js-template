@@ -1,6 +1,5 @@
-.header {
-  background-color: lightblue;
-  h1{
-    color : white;
-  }
-}
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";

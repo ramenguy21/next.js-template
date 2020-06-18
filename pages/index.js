@@ -1,31 +1,18 @@
 import Head from 'next/head'
-import Link from 'next/link'
-import Sidebar from '../components/sidebar'
+import Header from '../components/header'
+import ProductCard from '../components/product_card'
 
 export default function Home() {
   return (
-    <div className="container">
-    <Head>
-      <title>Teizro</title>
-    </Head>
-
-    <main>
-      <div className="header bg-blue-500">
-        <h1>Teizro Web</h1>
-        <p>Hi, Welcome to Teizro</p>
-        <Link href="/store">
-          <a>Start Shopping !</a>
-        </Link>
-        <Sidebar></Sidebar>
-      </div>
-      
-    </main>
-
-      <style jsx global>{`
+    <div>
+      <Head>
+        <title>Teizro</title>
+      </Head>
+      <Header></Header>
+      <ProductCard></ProductCard>
+        <style jsx global>{`
         html,
         body {
-          padding: 0;
-          margin: 0;
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;
@@ -36,6 +23,6 @@ export default function Home() {
         }
       `}</style>
 
-    </div>
+      </div>
   )
 }
